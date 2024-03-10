@@ -39,9 +39,8 @@ pip3 install -r requirements.txt
 
 .env file
 
-OPENAI_API_KEY=sk-brHeh...A39v5iXsM2
-
-`export OPENAI_API_KEY='sk-brHeh...A39v5iXsM2'`
+OPENAI_API_KEY=YOUR-OPENAI-KEY
+`export OPENAI_API_KEY='YOUR-OPENAI-KEY'`
 
 
 ## Run the script:
