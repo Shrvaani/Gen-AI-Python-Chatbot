@@ -49,10 +49,10 @@ OPENAI_API_KEY=YOUR-OPENAI-KEY
 
 (Windows)
 ```
-python main.py
+streamlit run main.py
 ```
 
 (MacOS)
 ```
-python3 main.py
+streamlit run main.py
 ```
