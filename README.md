@@ -1,57 +1,40 @@
-# Project : Integrating the GPT models into Web Projects
+## Project : Build a AI-powered chatbot application
 
-## **Install Python** ![Python](img/python_65.png)
+1. Create a virtual environment
 
-- A [Quick Guide for Installing](https://github.com/PackeTsar/Install-Python/blob/master/README.md#install-python-) Python on Common Operating Systems
-- Download the latest version of [Python 3.12](https://www.python.org/downloads/)
+**MacOS/Linux**:
 
-## Create a virtual environment :
-
-(Windows)
-```
-python -m venv env
-```
-
-(MacOS)
 ```
 python3 -m venv env
 ```
 
-## Activate the virtual environment :
+**Windows**:
+
+```
+python -m venv env
+```
+
+2. Activate the virtual environment
 
 ```
 source env/bin/activate
 ```
 
-## Installation:
-(Windows)
-```
-pip install -r requirements.txt
-```
-
-(MacOS)
+3. Install the requirements
 
 ```
 pip3 install -r requirements.txt
+pip3 install streamlit
 ```
 
-## [get an API key](https://platform.openai.com/account/api-keys)
+4. Get and set an API key as an environment variable
 
-.env file
+.env file:
 
+```
 OPENAI_API_KEY=sk-brHeh...A39v5iXsM2
-
-`export OPENAI_API_KEY='sk-brHeh...A39v5iXsM2'`
-
-
-## Run the script:
-
-(Windows)
-```
-python main.py
 ```
 
-(MacOS)
-```
-python3 main.py
-```
+5. Start the app
+
+`streamlit run main.py`
