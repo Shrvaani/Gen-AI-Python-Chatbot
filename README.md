@@ -2,11 +2,7 @@
 
 ....
 
-**openai**: [OpenAI](https://openai.com/): OpenAI library for Python to build applications with GPT-3.
-**streamlit**: [Streamlit](https://streamlit.io/): Streamlit is an open-source Python library that makes it easy to build beautiful custom web-apps for machine learning and data science.
-**streamlit-chat**: [Streamlit Chat](https://pypi.org/project/streamlit-chat/): Streamlit Chat is a Streamlit component that allows you to add a chatbot to your Streamlit app. It uses OpenAI's GPT-3 to generate responses to user input.
-**python-dotenv**: [Python Dotenv](https://pypi.org/project/python-dotenv/): Reads the key-value pair from .env file and adds them to environment variable. It is great for managing app settings during development and in production using 12-factor principles.
-**pillow**: [Pillow](https://pypi.org/project/Pillow/): Pillow is the friendly PIL fork by Alex Clark and Contributors. PIL is the Python Imaging Library by Fredrik Lundh and Contributors.
+**openai**: openai: OpenAI: OpenAI Python library to create GPT-3 applications. Streamlit: Streamlit is an open-source Python toolkit that facilitates the development of stunning, personalized online applications for data science and machine learning. Adding a chatbot to your Streamlit app is possible with the help of the Streamlit component known as "streamlit-chat." It generates replies to user input using OpenAI's GPT-3. The Python Dotenv Dotenv: Adds the key-value pair to the environment variable by reading it from the.env file. Using the 12-factor principles, it is excellent for controlling app settings both in development and production. pillow: Pillow is Alex Clark and Contributors' amiable PIL fork. The Python Imaging Library (PIL) was created by Fredrik Lundh and his collaborators.
 
 Requirements:
 
