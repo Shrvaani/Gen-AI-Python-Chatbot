@@ -50,12 +50,12 @@ pip install streamlit streamlit-chat
 
 ### Set the key as an environment variable:
 
-`export OPENAI_API_KEY='sk-brHeh...A39v5iXsM2'`
+`export OPENAI_API_KEY=YOUR OPEN AI KEY`
 
 .env file:
 
 ```
-OPENAI_API_KEY=sk-brHeh...A39v5iXsM2
+OPENAI_API_KEY=YOUR OPEN AI KEY
 ```
 
 ## Start the app:
