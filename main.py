@@ -1,62 +1,30 @@
-import os
-import openai
-import tiktoken
-from colorama import Fore
-from dotenv import load_dotenv
+import streamlit as st
+from handlers import downloadFile, generate_image, get_files
+
+desired_size = (600, 400)
+
+# Streamlit App
+st.title("🖼️ Image Generation Gallery ✨")  # Add a title
+margin = '<div style="margin: 20px 5px;"></div>'
+
+# User input
+with st.form("user_form", clear_on_submit=True):
+    user_input = st.text_input("Type something")
+    submit_button = st.form_submit_button(label="Send")
+
+# Press Enter to generate response from chatbot
+if submit_button:
+    with st.spinner("Genereting image..."):
+        image = generate_image(user_input)
+        st.image(image, use_column_width=True)
+        saved_image= downloadFile(user_input, image)
+        st.success("Image succesfully genereated and saved to the media folder")
 
 
-# Load the environment variables - set up the OpenAI API client
-
-
-# Set up the model and prompt
-
-
-def get_tokens(user_input: str) -> int:
-    """Returns the number of tokens in a text string."""
-
-    encoding = tiktoken.get_encoding("cl100k_base")
-
-    token_integers = encoding.encode(user_input)
-    tokens_usage = len(token_integers)
-
-    tokenized_input = tokenized_input = list(
-        map(
-            lambda x: encoding.decode_single_token_bytes(x).decode("utf-8"),
-            encoding.encode(user_input),
-        )
-    )
-    print(f"{encoding}: {tokens_usage} tokens")
-    print(f"token integers: {tokens_usage}")
-    print(f"token bytes: {tokenized_input}")
-
-
-def start():
-    print("MENU")
-    print("====")
-    print("[1]- Ask a question")
-    print("[2]- Exit")
-    choice = input("Enter your choice: ")
-    if choice == "1":
-        ask()
-    elif choice == "2":
-        exit()
-    else:
-        print("Invalid choice")
-
-
-def ask():
-    """Ask a question and get a response from the model."""
-    instructions = (
-        "Type your question and press ENTER. Type 'x' to go back to the MAIN menu.\n"
-    )
-    print(Fore.BLUE + "\n\x1B[3m" + instructions + "\x1B[0m" + Fore.RESET)
-
-    user_input = input("Q: ")
-
-    # Exit
-    if user_input == "x":
-        start()
+def display_gallery():
+    """Display all images in the gallery"""
+    pass
 
 
 if __name__ == "__main__":
-    start()
+    display_gallery()
