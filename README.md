@@ -1,5 +1,7 @@
 ## An AI-powered Image Gallery
 
+An AI-enhanced image gallery with automated tagging and categorization.
+
 ## Requirements:
 
 1. **openai**: [OpenAI](https://openai.com/) OpenAI Python library to create GPT-3 applications.
