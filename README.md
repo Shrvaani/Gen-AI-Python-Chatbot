@@ -1,57 +1,31 @@
-# Project : Integrating the GPT models into Web Projects
+# Integrating the GPT models into Web Projects
 
-## **Install Python** ![Python](img/python_65.png)
+## Overview
 
-- A [Quick Guide for Installing](https://github.com/PackeTsar/Install-Python/blob/master/README.md#install-python-) Python on Common Operating Systems
-- Download the latest version of [Python 3.12](https://www.python.org/downloads/)
+This repository contains multiple AI-powered projects built using Python. It includes an AI assistant, an image gallery with AI enhancements, and a chatbot for humor. The main branch serves as the stable version, integrating core functionalities.
 
-## Create a virtual environment :
+## Branches
 
-(Windows)
-```
-python -m venv env
-```
+1. [AI-Assistant](https://github.com/Shrvaani/Gen-AI-Using-Python/tree/AI_Assistant) - Implements an AI-powered virtual assistant for answering queries.
+2. [AI-Powered-Image-Gallery](https://github.com/Shrvaani/Gen-AI-Using-Python/tree/AI_Powered_Image_Gallery) - An AI-enhanced image gallery with automated tagging and categorization.
+3. [Laughbot](https://github.com/Shrvaani/Gen-AI-Using-Python/tree/LaughBot) - A chatbot designed to generate and share humorous responses.
 
-(MacOS)
-```
-python3 -m venv env
-```
-
-## Activate the virtual environment :
+## Dependencies
+Ensure you have the required Python libraries installed:
 
 ```
-source env/bin/activate
+pip install flask flask-cors pandas pdfplumber scikit-learn
 ```
 
-## Installation:
-(Windows)
+## Usage
+
+1. Clone the Repository
 ```
-pip install -r requirements.txt
+git clone <repo_url>
+cd <repo_folder>
 ```
-
-(MacOS)
-
+2. Run the API
+(On macOS/Linux/Windows:)
 ```
-pip3 install -r requirements.txt
-```
-
-## [get an API key](https://platform.openai.com/account/api-keys)
-
-.env file
-
-OPENAI_API_KEY=sk-brHeh...A39v5iXsM2
-
-`export OPENAI_API_KEY='sk-brHeh...A39v5iXsM2'`
-
-
-## Run the script:
-
-(Windows)
-```
-python main.py
-```
-
-(MacOS)
-```
-python3 main.py
+python app.py
 ```
