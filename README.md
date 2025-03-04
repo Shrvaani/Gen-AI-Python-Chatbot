@@ -1,5 +1,7 @@
 # Integrating the GPT models into Web Projects
 
+Gen-AI is an innovative Python project aimed at exploring and implementing various algorithms and techniques in the field of artificial intelligence (AI) and genetic algorithms (GA). The project provides a comprehensive framework for experimenting with genetic algorithms, evolutionary strategies, and other evolutionary computing methods.
+
 ## Overview
 
 This repository contains multiple AI-powered projects built using Python. It includes an AI assistant, an image gallery with AI enhancements, and a chatbot for humor. The main branch serves as the stable version, integrating core functionalities.
